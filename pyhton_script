@@ -1,0 +1,18 @@
+'''
+WIFI QR Code generator
+@fo
+'''
+
+from wifi_qrcode_generator import wifi_qrcode
+from IPython.display import display
+
+ # if open network; hidden=False authentication_type="nopass"
+qr_code=wifi_qrcode("wifi_name", hidden=False, authentication_type="WPA", password="wifi_password")                                                                                               
+qr_code_img=qr_code.make_image()
+
+# Display the QR code in Jupyter notebook
+display(qr_code_img)
+
+# to save the QR code
+qr_code_img.save("FO_Home_WiFi.png")
+print("QR Code saved"
