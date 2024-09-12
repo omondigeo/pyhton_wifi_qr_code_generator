@@ -16,3 +16,4 @@ display(qr_code_img)
 # to save the QR code
 qr_code_img.save("FO_Home_WiFi.png")
 print("QR Code saved"
+
